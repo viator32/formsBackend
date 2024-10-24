@@ -12,8 +12,6 @@
 - **Pagination:** Retrieve forms in paginated responses to handle large datasets efficiently.
 - **Swagger UI Integration:** Interactive API documentation and testing interface.
 - **Validation:** Ensures data integrity with input validation.
-- **Global Exception Handling:** Centralized error management for consistent responses.
-- **Logging:** Monitors application behavior and aids in debugging.
 - **Security Configuration:** Configurable access to API endpoints (if needed).
 
 ## Technologies Used
@@ -24,9 +22,6 @@
 - **H2 Database**
 - **Springdoc OpenAPI (Swagger UI)**
 - **Maven**
-- **Lombok** (Optional)
-- **Spring Security** (Optional)
-- **JUnit & Mockito** for Testing
 
 ## Prerequisites
 
@@ -276,16 +271,6 @@ http://localhost:8080/v3/api-docs
   6. **Clear Browser Cache:**
      - Sometimes, cached responses can cause 404 errors.
 
-#### 6.3. Lombok Compilation Errors
-
-- **Error:** `cannot find symbol` or similar errors related to Lombok-generated methods.
-  
-  **Solutions:**
-  - **Ensure Lombok Plugin is Installed:** Install the Lombok plugin in your IDE.
-  - **Enable Annotation Processing:** Enable annotation processing in IDE settings.
-  - **Verify Lombok Dependency:** Ensure Lombok is correctly defined in `pom.xml`.
-  - **Rebuild the Project:** Sometimes, a clean rebuild resolves the issue.
-
 #### 6.4. Application Not Accessible
 
 - **Issue:** API endpoints return connection refused or 500 errors.
@@ -296,33 +281,7 @@ http://localhost:8080/v3/api-docs
   - **Check Application Logs:** Look for runtime errors in the console or log files.
   - **Firewall Settings:** Ensure that local firewall settings are not blocking port `8080`.
 
-### 7. Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. **Fork the Repository**
-2. **Create a Feature Branch**
-   
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-   
-3. **Commit Your Changes**
-   
-   ```bash
-   git commit -m "Add some feature"
-   ```
-   
-4. **Push to the Branch**
-   
-   ```bash
-   git push origin feature/YourFeature
-   ```
-   
-5. **Open a Pull Request**
-   
-   Provide a clear description of your changes and the problem they solve.
-
-### 8. License
+### 7. License
 
 This project is licensed under the [MIT License](LICENSE).
